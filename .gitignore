@@ -32,7 +32,9 @@
 *.app
 
 # PERSONAL
-build/
-test/
-.exercism/
-
+# FIXME: need to keep test/ and .exercism/
+# build/
+# test/
+# .exercism/
+out/
+.vs/

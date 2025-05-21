@@ -41,7 +41,8 @@ TEST_CASE("no_matches") {
     REQUIRE(ExpectedSet({}).is_identical_to(matches));
 }
 
-//#if defined(EXERCISM_RUN_ALL_TESTS)
+#define EXERCISM_RUN_ALL_TESTS
+#if defined(EXERCISM_RUN_ALL_TESTS)
 TEST_CASE("detects_two_anagrams",
           "[findAnagrams][03eb9bbe-8906-4ea0-84fa-ffe711b52c8b]") {
     auto subject = anagram::anagram("solemn");
@@ -169,4 +170,4 @@ TEST_CASE("words_other_than_themselves_can_be_anagrams",
 
     REQUIRE(ExpectedSet({"Silent"}).is_identical_to(matches));
 }
-//#endif
+#endif
