@@ -15,7 +15,8 @@ TEST_CASE("slices_of_one_from_one") {
     REQUIRE(expected == actual);
 }
 
-//#if defined(EXERCISM_RUN_ALL_TESTS)
+#define EXERCISM_RUN_ALL_TESTS
+#if defined(EXERCISM_RUN_ALL_TESTS)
 TEST_CASE("slices_of_one_from_two") {
     const vector<string> expected{"1", "2"};
 
@@ -72,4 +73,4 @@ TEST_CASE("slice_length_cannot_be_negative") {
 TEST_CASE("empty_series_is_invalid") {
     REQUIRE_THROWS_AS(series::slice("", 1), domain_error);
 }
-//#endif
+#endif

@@ -13,7 +13,8 @@ TEST_CASE("no factors", "[factors][924fc966-a8f5-4288-82f2-6b9224819ccd]") {
     REQUIRE(expected == actual);
 }
 
-//#if defined(EXERCISM_RUN_ALL_TESTS)
+#define EXERCISM_RUN_ALL_TESTS
+#if defined(EXERCISM_RUN_ALL_TESTS)
 TEST_CASE("prime number", "[factors][17e30670-b105-4305-af53-ddde182cb6ad]") {
     const std::vector<long long> expected{2};
 
@@ -112,4 +113,4 @@ TEST_CASE("factors include a large prime",
     REQUIRE(expected == actual);
 }
 
-//#endif
+#endif

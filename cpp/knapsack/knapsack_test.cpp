@@ -13,7 +13,8 @@ TEST_CASE("no items", "[maximumValue][3993a824-c20e-493d-b3c9-ee8a7753ee59]") {
     REQUIRE(knapsack::maximum_value(max_weight, items) == 0);
 }
 
-//#if defined(EXERCISM_RUN_ALL_TESTS)
+#define EXERCISM_RUN_ALL_TESTS
+#if defined(EXERCISM_RUN_ALL_TESTS)
 
 TEST_CASE("one item, too heavy",
           "[maximumValue][1d39e98c-6249-4a8b-912f-87cb12e506b0]") {
@@ -62,4 +63,4 @@ TEST_CASE("15 items", "[maximumValue][7c682ae9-c385-4241-a197-d2fa02c81a11]") {
     REQUIRE(knapsack::maximum_value(max_weight, items) == 1458);
 }
 
-//#endif  // EXERCISM_RUN_ALL_TESTS
+#endif  // EXERCISM_RUN_ALL_TESTS

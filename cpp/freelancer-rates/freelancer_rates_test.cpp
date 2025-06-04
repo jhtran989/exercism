@@ -15,7 +15,8 @@ TEST_CASE("it's the hourly_rate times 8", "[task_1]") {
     REQUIRE_THAT(daily_rate(50), Catch::Matchers::WithinRel(400.0, 0.000001));
 }
 
-//#if defined(EXERCISM_RUN_ALL_TESTS)
+#define EXERCISM_RUN_ALL_TESTS
+#if defined(EXERCISM_RUN_ALL_TESTS)
 
 TEST_CASE("it always returns a float", "[task_1]") {
     REQUIRE_THAT(daily_rate(60), Catch::Matchers::WithinRel(480.0, 0.000001));
@@ -69,4 +70,4 @@ TEST_CASE("it applies the discount", "[task_4]") {
     REQUIRE(days_in_budget(480, 70, 20) == 1);
 }
 
-//#endif
+#endif

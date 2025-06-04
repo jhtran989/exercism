@@ -15,7 +15,8 @@ TEST_CASE("Error message", "[task_1]") {
     REQUIRE(expected == actual);
 }
 
-//#if defined(EXERCISM_RUN_ALL_TESTS)
+#define EXERCISM_RUN_ALL_TESTS
+#if defined(EXERCISM_RUN_ALL_TESTS)
 TEST_CASE("Warning message", "[task_1]") {
     const string actual = log_line::message("[WARNING]: Disk almost full");
 
@@ -80,4 +81,4 @@ TEST_CASE("Info reformat", "[task_3]") {
 
     REQUIRE(actual == expected);
 }
-//#endif
+#endif

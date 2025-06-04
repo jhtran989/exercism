@@ -10,7 +10,8 @@ TEST_CASE("Create different probes", "[task_1]") {
     heaven::Vessel will{"Riker", 2, star_map::System::BetaHydri};
 }
 
-//#if defined(EXERCISM_RUN_ALL_TESTS)
+#define EXERCISM_RUN_ALL_TESTS
+#if defined(EXERCISM_RUN_ALL_TESTS)
 
 TEST_CASE("Create drone from replication", "[task_2]") {
     heaven::Vessel bob{"Robert Johansson", 1};
@@ -42,4 +43,4 @@ TEST_CASE("Check non-class functions", "[task_4]") {
     REQUIRE_FALSE(heaven::in_the_same_system(marv, howie));
 }
 
-//#endif
+#endif

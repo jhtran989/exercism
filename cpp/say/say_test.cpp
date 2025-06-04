@@ -9,7 +9,8 @@ TEST_CASE("zero", "[5d22a120-ba0c-428c-bd25-8682235d83e8]") {
     REQUIRE("zero" == say::in_english(0));
 }
 
-//#if defined(EXERCISM_RUN_ALL_TESTS)
+#define EXERCISM_RUN_ALL_TESTS
+#if defined(EXERCISM_RUN_ALL_TESTS)
 
 TEST_CASE("one", "[9b5eed77-dbf6-439d-b920-3f7eb58928f6]") {
     REQUIRE("one" == say::in_english(1));
@@ -93,4 +94,4 @@ TEST_CASE("numbers above 999,999,999,999 are out of range",
     REQUIRE_THROWS_AS(say::in_english(1000000000000), std::domain_error);
 }
 
-//#endif
+#endif

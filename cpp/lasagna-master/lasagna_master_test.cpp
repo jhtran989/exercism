@@ -32,7 +32,8 @@ TEST_CASE(
     REQUIRE(preparationTime(layers, time) == expected);
 }
 
-//#if defined(EXERCISM_RUN_ALL_TESTS)
+#define EXERCISM_RUN_ALL_TESTS
+#if defined(EXERCISM_RUN_ALL_TESTS)
 
 TEST_CASE("preparationTime: Preparation time for few layers", "[task_1]") {
     std::vector<std::string> layers{
@@ -147,4 +148,4 @@ TEST_CASE("Adds secret string ingredient", "[task_5]") {
     REQUIRE(myList == expected);
 }
 
-//#endif
+#endif

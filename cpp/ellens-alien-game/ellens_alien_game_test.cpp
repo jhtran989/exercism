@@ -13,7 +13,8 @@ TEST_CASE("Alien has correct initial coordinates", "[task_1]") {
     REQUIRE(alien.y_coordinate == -1);
 }
 
-//#if defined(EXERCISM_RUN_ALL_TESTS)
+#define EXERCISM_RUN_ALL_TESTS
+#if defined(EXERCISM_RUN_ALL_TESTS)
 
 TEST_CASE("Alien has correct initial health", "[task_1]") {
     Alien alien{22, 0};
@@ -70,4 +71,4 @@ TEST_CASE("Alien collision detection with other aliens", "[task_5]") {
     REQUIRE(alien1.collision_detection(alien3));
 }
 
-//#endif
+#endif

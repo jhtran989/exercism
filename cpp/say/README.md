@@ -69,4 +69,4 @@ The program must also report any values that are out of range.
 
 ### Based on
 
-A variation on the JavaRanch CattleDrive, Assignment 4 - https://coderanch.com/wiki/718804
+A variation on the JavaRanch CattleDrive, Assignment 4 - https://web.archive.org/web/20240907035912/https://coderanch.com/wiki/718804

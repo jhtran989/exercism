@@ -34,7 +34,8 @@ TEST_CASE("Account number assembly function exists in correct namespace",
     REQUIRE_NOTHROW(estate_executor::assemble_account_number(0));
 }
 
-//#if defined(EXERCISM_RUN_ALL_TESTS)
+#define EXERCISM_RUN_ALL_TESTS
+#if defined(EXERCISM_RUN_ALL_TESTS)
 
 TEST_CASE("Account number assembly works correctly", "[task_2]") {
     int account_with_secret_1{16706};
@@ -57,4 +58,4 @@ TEST_CASE("Code fragments fit correctly", "[task_3]") {
     REQUIRE(estate_executor::assemble_code() == final_code);
 }
 
-//#endif
+#endif

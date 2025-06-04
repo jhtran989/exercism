@@ -10,7 +10,8 @@ TEST_CASE("connection_check: test for nullptr", "[task_1]") {
     REQUIRE_FALSE(speedywagon::connection_check(nothing_connected));
 }
 
-//#if defined(EXERCISM_RUN_ALL_TESTS)
+#define EXERCISM_RUN_ALL_TESTS
+#if defined(EXERCISM_RUN_ALL_TESTS)
 
 TEST_CASE("connection_check: test for connected sensor", "[task_1]") {
     speedywagon::pillar_men_sensor active_sensor{42, "colloseum", {}};
@@ -58,4 +59,4 @@ TEST_CASE("uv_alarm: works correctly with mock data", "[task_4]") {
     REQUIRE_FALSE(speedywagon::uv_alarm(&wham));
 }
 
-//#endif
+#endif

@@ -13,7 +13,8 @@ TEST_CASE("no_primes_under_two") {
     REQUIRE(expected == actual);
 }
 
-//#if defined(EXERCISM_RUN_ALL_TESTS)
+#define EXERCISM_RUN_ALL_TESTS
+#if defined(EXERCISM_RUN_ALL_TESTS)
 TEST_CASE("find_first_prime") {
     const std::vector<int> expected{2};
 
@@ -57,4 +58,4 @@ TEST_CASE("find_primes_up_to_1000") {
 
     REQUIRE(expected == actual);
 }
-//#endif
+#endif

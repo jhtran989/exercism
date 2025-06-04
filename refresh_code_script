@@ -1,0 +1,35 @@
+# download all the coding problems again to get the test/ and .exercism/ foldersto run them properly with CMake
+
+exercism download --track=cpp --exercise=election-day --force
+exercism download --track=cpp --exercise=ellens-alien-game --force
+exercism download --track=cpp --exercise=freelancer-rates --force
+exercism download --track=cpp --exercise=hello-world --force
+exercism download --track=cpp --exercise=interest-is-interesting --force
+exercism download --track=cpp --exercise=knapsack --force
+exercism download --track=cpp --exercise=lasagna --force
+exercism download --track=cpp --exercise=lasagna-master --force
+exercism download --track=cpp --exercise=last-will --force
+exercism download --track=cpp --exercise=log-levels --force
+exercism download --track=cpp --exercise=making-the-grade --force
+exercism download --track=cpp --exercise=nth-prime --force
+exercism download --track=cpp --exercise=pacman-rules --force
+exercism download --track=cpp --exercise=power-of-troy --force
+exercism download --track=cpp --exercise=prime-factors --force
+exercism download --track=cpp --exercise=queen-attack --force
+exercism download --track=cpp --exercise=reverse-string --force
+exercism download --track=cpp --exercise=robot-name --force
+exercism download --track=cpp --exercise=say --force
+exercism download --track=cpp --exercise=series --force
+exercism download --track=cpp --exercise=sieve --force
+exercism download --track=cpp --exercise=speedywagon --force
+exercism download --track=cpp --exercise=spiral-matrix --force
+exercism download --track=cpp --exercise=sublist --force
+exercism download --track=cpp --exercise=troll-the-trolls --force
+exercism download --track=cpp --exercise=vehicle-purchase --force
+
+
+
+
+
+
+

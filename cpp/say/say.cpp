@@ -141,7 +141,6 @@ std::string in_english(long long num) {
         remainder = remainder / 1000;
         int three_digit_copy = three_digit;
 
-        // FIXME: redundant adding space
         // add spacing after initial group
         // IMPORTANT: also only if remainder is not zero
         // if (!initial_grouping && remainder != 0 && three_digit != 0) {
@@ -225,7 +224,6 @@ std::string in_english(long long num) {
             initial_grouping = false;
         } 
 
-        // commented out above because of this (spacing between iters)
         // IMPORTANT: need to add space in between subsequent iters (and previous part is not empty)
         if (decimal_place_index != 0 && result != "") {
             result = three_digit_str + " " + result;

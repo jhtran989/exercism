@@ -14,7 +14,8 @@ TEST_CASE("empty spiral", "[8f584201-b446-4bc9-b132-811c8edd9040]") {
     REQUIRE(expected == spiral_matrix::spiral_matrix(0));
 }
 
-//#if defined(EXERCISM_RUN_ALL_TESTS)
+#define EXERCISM_RUN_ALL_TESTS
+#if defined(EXERCISM_RUN_ALL_TESTS)
 TEST_CASE("trivial spiral", "[e40ae5f3-e2c9-4639-8116-8a119d632ab2]") {
     std::vector<std::vector<uint32_t>> const expected = {{1}};
     REQUIRE(expected == spiral_matrix::spiral_matrix(1));
@@ -57,4 +58,4 @@ TEST_CASE("spiral of size 5", "[f4d2165b-1738-4e0c-bed0-c459045ae50d]") {
     };
     REQUIRE(expected == spiral_matrix::spiral_matrix(5));
 }
-//#endif
+#endif

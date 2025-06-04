@@ -10,7 +10,8 @@ TEST_CASE("empty plaintext results in an empty ciphertext",
     REQUIRE("" == crypto_square::cipher("").normalized_cipher_text());
 }
 
-//#if defined(EXERCISM_RUN_ALL_TESTS)
+#define EXERCISM_RUN_ALL_TESTS
+#if defined(EXERCISM_RUN_ALL_TESTS)
 TEST_CASE("normalization results in empty plaintext",
           "[aad04a25-b8bb-4304-888b-581bea8e0040]") {
     REQUIRE("" ==
@@ -54,4 +55,4 @@ TEST_CASE(
                                   "would have given us roots.")
                 .normalized_cipher_text());
 }
-//#endif
+#endif

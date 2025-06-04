@@ -30,7 +30,8 @@ TEST_CASE("empty lists", "[97319c93-ebc5-47ab-a022-02a1980e1d29]") {
     REQUIRE(expected == sublist::sublist({}, {}));
 }
 
-//#if defined(EXERCISM_RUN_ALL_TESTS)
+#define EXERCISM_RUN_ALL_TESTS
+#if defined(EXERCISM_RUN_ALL_TESTS)
 
 TEST_CASE("empty list within non empty list",
           "[de27dbd4-df52-46fe-a336-30be58457382]") {
@@ -123,4 +124,4 @@ TEST_CASE("same digits but different numbers",
     REQUIRE(expected == sublist::sublist({1, 0, 1}, {10, 1}));
 }
 
-//#endif
+#endif

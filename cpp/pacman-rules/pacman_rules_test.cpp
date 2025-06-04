@@ -9,7 +9,8 @@ TEST_CASE("ghost gets eaten", "[task_1]") {
     REQUIRE(can_eat_ghost(true, true));
 }
 
-//#if defined(EXERCISM_RUN_ALL_TESTS)
+#define EXERCISM_RUN_ALL_TESTS
+#if defined(EXERCISM_RUN_ALL_TESTS)
 
 TEST_CASE("ghost does not get eaten because no power pellet active",
           "[task_1]") {
@@ -66,4 +67,4 @@ TEST_CASE(
     REQUIRE(won(true, true, true));
 }
 
-//#endif
+#endif

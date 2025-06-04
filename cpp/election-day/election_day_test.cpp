@@ -13,7 +13,8 @@ TEST_CASE("Votes are returned correctly for 0 votes", "[task_1]") {
     REQUIRE(vote_count(result) == expected);
 }
 
-//#if defined(EXERCISM_RUN_ALL_TESTS)
+#define EXERCISM_RUN_ALL_TESTS
+#if defined(EXERCISM_RUN_ALL_TESTS)
 
 TEST_CASE("Votes are returned correctly for 211 votes", "[task_1]") {
     ElectionResult result{"Nadir", 211};
@@ -93,4 +94,4 @@ TEST_CASE("Presidency, votes and other results do not change", "[task_3]") {
     REQUIRE(final_count[2].votes == 256);
 }
 
-//#endif
+#endif
