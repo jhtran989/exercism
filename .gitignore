@@ -32,9 +32,12 @@
 *.app
 
 # PERSONAL
-# FIXME: need to keep test/ and .exercism/
-# build/
-# test/
-# .exercism/
+# FIXME: need to keep test/ but make sure not to include .exercism 
+#build/
+#test/
+.exercism/
 out/
 .vs/
+
+# neovim 
+Session.vim
