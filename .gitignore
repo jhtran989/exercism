@@ -41,3 +41,9 @@ out/
 
 # neovim 
 Session.vim
+
+# VS Code
+*.code-workspace
+
+# Odin
+ols-old.json

@@ -1,0 +1,51 @@
+{
+  //"$schema": "https://raw.githubusercontent.com/DanielGavin/ols/master/misc/ols.schema.json",
+  "collections": [
+    { "name": "core", "path": "C:/Odin/core" },
+    { "name": "vendor", "path": "C:/Odin/vendor" },
+    { "name": "shared", "path": "C:/Odin/shared" }
+  ],
+  "enable_semantic_tokens": false,
+  "enable_document_symbols": true,
+  "enable_hover": true,
+  "enable_snippets": true,
+  "enable_inlay_hints": true,
+  //"enable_inlay_hints_default_params": true,
+  "enable_inlay_hints_implicit_return": true,
+  "enable_inlay_hints_optional_result": true,
+  // May be an old option
+  //"enable_procedure_context": true,
+  "enable_code_action_invert_if": true,
+  "enable_overload_resolution": true,
+  "checker_args": "-vet -strict-style",
+  "verbose": true,
+  // For use with VS Code -- Ctrl-click
+  "enable_document_links": false,
+  // Do not use profile for now
+  //"profile": "default",
+  "profiles": [
+    {
+      "name": "default",
+      "checker_path": ["src"],
+      "defines": { "ODIN_DEBUG": "false" }
+    },
+    {
+      "name": "linux_profile",
+      "os": "linux",
+      "checker_path": ["src/main.odin"],
+      "defines": { "ODIN_DEBUG": "false" }
+    },
+    {
+      "name": "mac_profile",
+      "os": "darwin",
+      "arch": "arm64",
+      "defines": { "ODIN_DEBUG": "false" }
+    },
+    {
+      "name": "windows_profile",
+      "os": "windows",
+      "checker_path": ["src"],
+      "defines": { "ODIN_DEBUG": "false" }
+    }
+  ]
+}
