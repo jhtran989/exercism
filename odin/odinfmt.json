@@ -3,6 +3,7 @@
   "character_width": 80,
   "tabs": false,
   "tabs_width": 4,
+  "spaces": 4,
   "newline_limit": 1,
   "brace_style": "_1TBS"
 }

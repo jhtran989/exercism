@@ -47,3 +47,6 @@ Session.vim
 
 # Odin
 ols-old.json
+
+# Debug
+*.pdb
